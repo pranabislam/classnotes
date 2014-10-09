@@ -1,0 +1,42 @@
+super class for warrior, or base class for warrior is Basechar because warrior extends Basechar. Warrior is a subclass.
+
+
+public class Basechar {
+	private int health=20;
+	public int getHealth(){
+		return health;
+	}	
+}
+public class Warrior extends Basechar{
+	private in healthboost = 5;
+	public int getHealth();
+		return health;
+}
+
+public class Mage extends Basechar{
+	public int manna = 12345;
+	
+	public int getManna(){
+		return manna;
+	}
+	
+}
+
+
+public class Driver {
+	public static void main(String[] args){
+	System.out.println()
+	}
+}
+
+/* the subclass only has access to public items in the super class
+
+java first looks at the subclass, then looks at the superclass if it cant find something. -- overriding --> when a subclass has a method 
+of the same name and signature (parameter types) as the on in the superclass.
+
+
+in class when doing healthboost for the warrior, he tried super.health
+
+that didnt work because health was private in the superclass.
+but he can call the method super.gethealth() and the warriors health boost is returned.
+*/
