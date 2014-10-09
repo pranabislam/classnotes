@@ -1,0 +1,41 @@
+a variable of a super class can refer to or be assigned to an instance of a subclass . but a variable in a subclass cant point to an instance of its super class.
+
+casting -- telling java to treat a variable of one type as another type. ---
+Basechar c ;
+	(Mage)c
+	^^^ treat c like Mage for this line
+
+assigning c2 = m --
+c2 doesnt get mages abilities until you cast it 
+((Mage)c2).getManna()
+
+
+private void setName(String name){
+	this.name = name;
+}
+----> this._____ refers to the instance variables/methods of a class
+
+class c {
+	private int a;
+	public void setA(){
+		this.a
+}
+
+	x1 = new c()
+	x1.setA()
+
+	this.a refers to x1's initial variable a
+
+	x2 = new c()
+	x2.setA()
+
+	This.a refers to x2's instance variable a.
+
+
+public String toString(){
+	return this.getName();
+}
+
+
+
+now we dont have to write "tostring" ever again to get the string representation 
