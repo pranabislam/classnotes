@@ -1,0 +1,17 @@
+super class with 1 parameter constructor and subclass with default constructor did not work. ie. name setting in base char didnt name the warrior 
+
+but when the subclass had the 1 param constructor and the super class had the default, it worked. 
+
+when we had a 1 param constructor in both the superclass and the subclass, it didnt work! 
+
+when the super class has the default constructor, and the subclass had 0 params, then it works (the constructor)
+
+0 def works
+0 0 works
+
+
+default in superclass, and when theres both a 0 param and a 1 param in subclass, it works 
+
+0 param in super class with a 1 param also in superclass (overloaded) and a default in subclass doesnt work.
+
+when both sub and super are overloaded with 0 and 1 param constructors, then it works
